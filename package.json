@@ -1,0 +1,34 @@
+{
+  "name": "defender-autotask-template",
+  "version": "1.0.0",
+  "description": "Template to kickstart an OpenZeppelin Defender autotask",
+  "main": "dist/handler.js",
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "format": "prettier --config .prettierrc --write \"**/*.{ts,js}\"",
+    "format:file": "prettier --config .prettierrc --write",
+    "start": "ts-node src/cli.ts",
+    "update": "yarn build && ts-node ./scripts/updateTask.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pooltogether/defender-autotask-template.git"
+  },
+  "author": "PoolTogether Inc.",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/pooltogether/defender-autotask-template/issues"
+  },
+  "homepage": "https://github.com/pooltogether/defender-autotask-template#readme",
+  "devDependencies": {
+    "@types/node": "16.11.6",
+    "prettier": "2.4.1",
+    "ts-node": "10.4.0",
+    "typescript": "4.4.4"
+  },
+  "dependencies": {
+    "commander": "8.3.0",
+    "defender-autotask-client": "1.10.0",
+    "defender-relay-client": "1.11.1"
+  }
+}
