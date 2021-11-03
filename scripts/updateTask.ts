@@ -7,7 +7,7 @@ program.parse(process.argv);
 
 async function updateAutotask() {
   const autotaskId = process.env.AUTOTASK_ID;
-  const handlerFile = './dist/handler.js';
+  const handlerFile = './dist/index.js';
 
   const client = new AutotaskClient({
     apiKey: process.env.DEFENDER_TEAM_API_KEY,

@@ -1,10 +1,10 @@
 {
   "name": "defender-autotask-template",
   "version": "1.0.0",
-  "description": "Template to kickstart an OpenZeppelin Defender autotask",
-  "main": "dist/handler.js",
+  "description": "Autotask to batch deposit the current pods float amount into the prize pool",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "rm -rf dist && tsc",
+    "build": "rm -rf dist && ncc build ./src/handler.ts",
     "format": "prettier --config .prettierrc --write \"**/*.{ts,js}\"",
     "format:file": "prettier --config .prettierrc --write",
     "start": "ts-node src/cli.ts",
@@ -22,6 +22,7 @@
   "homepage": "https://github.com/pooltogether/defender-autotask-template#readme",
   "devDependencies": {
     "@types/node": "16.11.6",
+    "@vercel/ncc": "0.31.1",
     "prettier": "2.4.1",
     "ts-node": "10.4.0",
     "typescript": "4.4.4"
@@ -29,6 +30,7 @@
   "dependencies": {
     "commander": "8.3.0",
     "defender-autotask-client": "1.10.0",
-    "defender-relay-client": "1.11.1"
+    "defender-relay-client": "1.11.1",
+    "ethers": "5.5.1"
   }
 }
