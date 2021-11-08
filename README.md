@@ -1,5 +1,5 @@
-# defender-autotask-template
-Template repository to kickstart an OpenZeppelin Defender autotask
+# pods-v3-autotask
+OpenZeppelin Defender autotask to batch deposit the current pods float amount into the prize pool
 
 ## Development
 
