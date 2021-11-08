@@ -5,7 +5,8 @@
     "target": "es2017",
     "allowJs": true,
     "module": "commonjs",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
   },
   "files": [
     "./src/handler.ts"
